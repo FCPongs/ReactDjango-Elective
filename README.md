@@ -1,5 +1,8 @@
 
-![Logo](https://github.com/FCPongs/ReactDjango-Elective/assets/137862066/3c6ce56f-e319-48f2-84b7-a9cf8e74e07a)
+<p align="center">
+  <!-- Adjust the size of the image -->
+  <img src="https://github.com/FCPongs/ReactDjango-Elective/assets/137862066/3c6ce56f-e319-48f2-84b7-a9cf8e74e07a" alt="Logo" width="200" height="200">
+</p>
 
 # Name of the system: 
 - Blank
