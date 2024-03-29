@@ -4,11 +4,11 @@ const PetProfileContainer = () => {
   return (
 <>
 {/* Container Div */}
-<div className='flex h-[70vh] justify-center items-center'>
+<div className='flex h-[80vh] justify-center items-center'>
     {/* Container */}
-    <div className='w-[70%]' >
+    <div className='w-[70%] ' >
 
-      <div className='flex w-[90%]'>
+      <div className='flex w-[40%]'>
       {/* Image - Flexed */}
       <img className='shadow-2xl rounded-xl h-[320px] w-[450px] object-cover mr-10' src="src\Images\Profile[1].png" alt="Profile" />
 

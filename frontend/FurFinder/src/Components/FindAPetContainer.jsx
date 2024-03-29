@@ -4,8 +4,9 @@ import {Link} from 'react-router-dom';
 const PetDisplayContainer = () => {
   return (
     <>
+    <div className='flex h-[80vh] items-center justify-center'>
         {/* Container */} 
-    <div className='flex justify-center mt-20 '>
+        <div className=''>
         {/* Link to profile viewer */} 
         <Link to="/PetProfile"> 
         <div className='flex w-80 h-[28rem] drop-shadow-2xl rounded bg-white '>
@@ -32,6 +33,8 @@ const PetDisplayContainer = () => {
         </div>
         </Link>
     </div>
+    </div>
+
     </>
   )
 }
