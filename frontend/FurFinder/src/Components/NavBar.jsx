@@ -1,5 +1,4 @@
 import LogoImage from '../Images/Logo.png';
-
 import {Link} from 'react-router-dom';
 
 
@@ -29,7 +28,7 @@ const NavBar = () => {
             <a href="#">Contact us</a>
             </li>
                 <li className='p-4 hover:underline'>
-                <a href="#">Find a pet</a>
+                <Link to="/FindAPet">Find a pet</Link>
             </li>
             <li className='p-4 hover:underline'>
             <a href="#">Manage pets</a>
