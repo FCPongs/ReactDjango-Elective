@@ -3,10 +3,12 @@ import React from 'react'
 const PetProfileContainer = () => {
   return (
 <>
+{/* Container Div */}
+<div className='flex h-[70vh] justify-center items-center'>
     {/* Container */}
-    <div className='mt-[10%] mx-[20%] h-[460px] w-[1100px]' >
+    <div className='w-[70%]' >
 
-      <div className='flex'>
+      <div className='flex w-[90%]'>
       {/* Image - Flexed */}
       <img className='shadow-2xl rounded-xl h-[320px] w-[450px] object-cover mr-10' src="src\Images\Profile[1].png" alt="Profile" />
 
@@ -27,7 +29,7 @@ const PetProfileContainer = () => {
           </div>
         </div>
 
-        <div className='text-justify overflow-auto h-[130px]'>        
+        <div className='text-justify overflow-auto h-[130px] w-[100%]'>        
           Cali is a charming and affectionate cat who is eagerly awaiting her forever home. 
           With her soft fur and endearing purr, she's sure to steal your heart from the moment you meet her.
           Cali is a charming and affectionate cat who is eagerly awaiting her forever home. 
@@ -46,7 +48,7 @@ const PetProfileContainer = () => {
 
       </div>
       </div>
-
+      </div>
     </>
   )
 }
