@@ -7,8 +7,10 @@ import React from 'react'
 const App = () => {
   return (
     <>
+    {/* NavBar component */}
     <NavBar/>
     </>
+
   )
 }
 
