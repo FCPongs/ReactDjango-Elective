@@ -1,18 +1,19 @@
+import './index.css'   
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import './index.css'
-import Home from '../Pages/Home.jsx'
+
+import Home from './Pages/Home.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
+
 const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Home />,
-  }
-
-])
-
+  { 
+  path: '/', 
+  element: <App/>,
+  errorElement: <div>404 Not Found</div>
+  },
+  ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

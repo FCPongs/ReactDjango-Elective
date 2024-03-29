@@ -1,6 +1,8 @@
 import React from 'react'
 
+//** This component is a props so ({slides}) is the argument we will pass to slides
 const SlidingImages = ({slides}) => {
+    //* useState- For next and previous button 
   return (
     <>
     <div className='w-screen h-[900px]'>

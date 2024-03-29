@@ -1,9 +1,10 @@
 import SlidingImages from '../Components/SlidingImages'  //* Sliding Images Carousel Component
+import NavBar from '../Components/NavBar'
 
   {/* Array of objects (Images to be used) */}
   const ImgSlides = [
-    {url:'src/Components/Images/FurFinderImageSL1.png', title: 'cat'},
-    {url:'src/Components/Images/FurFinderImageSL2.jpg', title: 'dog'}
+    {url:'src/Images/FurFinderImageSL1.png', title: 'cat'},
+    {url:'src/Images/FurFinderImageSL2.jpg', title: 'dog'}
   ]
 
   import React from 'react'
@@ -11,6 +12,7 @@ import SlidingImages from '../Components/SlidingImages'  //* Sliding Images Caro
   const Home = () => {
     return (
       <>
+      <NavBar/>
         {/* Sliding images component (as a prop) */}
         <SlidingImages slides={ImgSlides}/>
       </>

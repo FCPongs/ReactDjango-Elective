@@ -1,11 +1,16 @@
 import LogoImage from '../Images/Logo.png';
 
+import {Link} from 'react-router-dom';
+
+
+
 import React from 'react'
 
 const NavBar = () => {
   return (
     <>
-    //* Div wrapper   
+    {/** Div wrapper    */}
+
     <div className='flex items-center justify-between bg-[#ffffff] shadow-xl h-24'>
 
       <div className="flex items-center"> 
@@ -24,10 +29,10 @@ const NavBar = () => {
             <a href="#">Contact us</a>
             </li>
                 <li className='p-4 hover:underline'>
-            <Link to='/animals'>Find a pet</Link>
+                <a href="#">Find a pet</a>
             </li>
             <li className='p-4 hover:underline'>
-            <Link to='/ManagePets'>Manage Pets</Link>
+            <a href="#">Manage pets</a>
             </li>
             
         </ul>
