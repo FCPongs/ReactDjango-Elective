@@ -7,6 +7,7 @@ import App from './App.jsx'
 import Home from './Pages/Home.jsx'               //* Home Page
 import FindAPet from './Pages/FindAPet.jsx'       //* Find a Pet Page
 import PetProfile from './Pages/PetProfile.jsx'   //* Pet Profile Page
+import Login from './Pages/Login.jsx'             //* Login Page
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 
@@ -23,7 +24,12 @@ const router = createBrowserRouter([
   {
     path: '/PetProfile',
     element: <PetProfile/>
+  },
+  {
+    path: '/Login',
+    element: <Login/>
   }
+
   ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
