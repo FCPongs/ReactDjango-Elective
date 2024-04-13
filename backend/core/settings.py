@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     # local
-    'pets',
+    'users',
+    'pets'
 ]
 
 MIDDLEWARE = [
