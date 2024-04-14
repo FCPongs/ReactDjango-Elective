@@ -35,16 +35,18 @@ const NavBar = () => {
           </li>
 
           {/** Manage Pets */}
-          <div className="p-4 relative">
+          <div className="p-4 relative hover:underline">
             {/** Button dropdown*/}
-            <div onClick={() => setOpen((prev) => !prev)}>Manage pets</div>
+            <div className="" onClick={() => setOpen((prev) => !prev)}>Manage pets</div>
 
             {isOpen && (
               <>
-                <div className="absolute">
-                  <li className="cursor-pointer hover:bg-slate-500">Add Pet</li>
-                  <li>Edit Pet</li>
-                  <li>Delete Pet</li>
+                <div className="absolute w-40 mt-2 bg-slate-100 shadow-md">
+                  <li className="cursor-pointer hover:bg-indigo-500 hover:text-white p-1">
+                    <Link to="/AddPet">Add Pet</Link>
+                  </li>
+                  <li className="cursor-pointer hover:bg-indigo-500 hover:text-white p-1">Edit Pet</li>
+                  <li className="cursor-pointer hover:bg-indigo-500 hover:text-white p-1">Delete Pet</li>
                 </div>
               </>
             )}
