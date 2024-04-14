@@ -4,8 +4,8 @@ from .views import ShelterList, ShelterDetail
 from .views import BreedList, BreedDetail
 
 urlpatterns = [
-    path('', PetList.as_view()),
-    path('<int:pk>/', PetDetail.as_view()),
+    path('pets/', PetList.as_view()),
+    path('pets/<int:pk>/', PetDetail.as_view()),
     path('shelter/', ShelterList.as_view()),
     path('shelter/<int:pk>/', ShelterDetail.as_view()),
     path('breed/', BreedList.as_view()),
