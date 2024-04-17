@@ -17,7 +17,7 @@ const Login = () => {
 
             {/** Login inputs div */}
             <div className="w-[60vh] h-[45vh]">
-              <div className="text-center p-4 mt-5 font-bold text-3xl">Welcome to FurFinder!</div>
+              <div className="text-center p-4 mt-5 font-bold text-3xl">Welcome to FurFinder</div>
 
               {/** Username input div */}
               <div className="p-4">
