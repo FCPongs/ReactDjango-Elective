@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const PetDisplayContainer = () => {
   return (
     <>
-    <div className='flex h-[80vh] items-center justify-center'>
+    <div data-testid="find-a-pet-container" className='flex h-[80vh] items-center justify-center'>
         {/* Container */} 
         <div className=''>
         {/* Link to profile viewer */} 

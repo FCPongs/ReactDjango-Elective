@@ -37,7 +37,7 @@ const NavBar = () => {
           {/** Manage Pets */}
           <div className="p-4 relative hover:underline">
             {/** Button dropdown*/}
-            <div className="" onClick={() => setOpen((prev) => !prev)}>Manage pets</div>
+            <div data-testid="dropdown-menu" className="" onClick={() => setOpen((prev) => !prev)}>Manage pets</div>
 
             {isOpen && (
               <>
