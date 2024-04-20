@@ -5,7 +5,7 @@ const SlidingImages = ({slides}) => {
     //* useState- For next and previous button 
   return (
     <>
-    <div className='w-screen h-[900px]'>
+    <div data-testid="sliding-container" className='w-screen h-[900px]'>
       <div className='w-full h-full bg-cover' style={{backgroundImage: `url(${slides[1].url})`}}></div>
     </div>
     </>
