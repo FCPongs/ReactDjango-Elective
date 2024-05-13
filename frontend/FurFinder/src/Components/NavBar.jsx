@@ -35,7 +35,7 @@ const NavBar = () => {
           </li>
 
           {/** Manage Pets */}
-          <div className="p-4 relative hover:underline">
+          <div className="p-4 relative hover:underline cursor-pointer">
             {/** Button dropdown*/}
             <div className="" onClick={() => setOpen((prev) => !prev)}>Manage pets</div>
 
