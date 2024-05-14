@@ -1,10 +1,12 @@
 import React from "react";
 import NavBar from "../Components/NavBar";
+import AnimatedPage from "./AnimatedPage";
 
 const AddPet = () => {
   return (
     <>
       <NavBar />
+      <AnimatedPage>
       {/** Name, animal type, breed, age, image, description */}
 
       {/** Outside div to consume the whole width and height*/}
@@ -112,6 +114,7 @@ const AddPet = () => {
           </div>
         </div>
       </div>
+      </AnimatedPage>
     </>
   );
 };
