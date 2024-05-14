@@ -12,9 +12,15 @@ import NavBar from '../Components/NavBar'
   const Home = () => {
     return (
       <>
+     
+      <div className='scrollbar-thin h-screen overflow-y-scroll overflow-x-hidden scrollbar-thumb-sky-500 scrollbar-track-white'>
       <NavBar/>
-        {/* Sliding images component (as a prop) */}
-        <SlidingImages slides={ImgSlides}/>
+      <SlidingImages slides={ImgSlides}/>
+
+      </div>
+
+        {/* Sliding images component (as a prop) 
+        <SlidingImages slides={ImgSlides}/> */}
       </>
     )
   }

@@ -35,9 +35,9 @@ const PetProfileContainer = () => {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between h-[60%] overflow-hidden">
+            <div className="flex flex-col justify-between h-[60%] overflow-hidden ">
             {/** Description */}
-            <div className="text-justify text-xl w-[100%] h-[80%]  overflow-auto ">
+            <div className="text-justify text-xl w-[100%] h-[90%]  pr-4 scrollbar-thin overflow-auto scrollbar-thumb-custom scrollbar-track-custom-light hover:scrollbar-thumb-[#059669] active:scrollbar-thumb-emerald-500/50">
               Cali is a charming and affectionate cat who is eagerly awaiting
               her forever home. With her soft fur and endearing purr, she's sure
               to steal your heart from the moment you meet her. Cali is a
