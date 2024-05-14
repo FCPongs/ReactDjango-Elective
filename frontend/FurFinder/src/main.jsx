@@ -10,8 +10,12 @@ import PetProfile from "./Pages/PetProfile.jsx"; //* Pet Profile Page
 import Login from "./Pages/Login.jsx"; //* Login Page
 import Application from "./Pages/Application.jsx"; //* Application Page
 
+
 import AddPet from "./Pages/AddPet.jsx"; //* Add Pet Page
+import EditPet from "./Pages/EditPet.jsx"; //* Edit Pet Page
+import DeletePet from "./Pages/DeletePet.jsx"; //* Delete Pet Page
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 
 const router = createBrowserRouter([
   {
@@ -38,6 +42,14 @@ const router = createBrowserRouter([
   {
     path: "/Application",
     element: <Application />,
+  },
+  {
+    path: "/EditPet",
+    element: <EditPet />,
+  },
+  {
+    path: "/DeletePet",
+    element: <DeletePet />,
   },
 ]);
 

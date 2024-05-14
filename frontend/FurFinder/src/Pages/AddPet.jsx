@@ -12,12 +12,13 @@ const AddPet = () => {
         {/** Outside div to consume the whole width and height*/}
         <div className="flex justify-center h-screen">
           {/** Div box*/}
-          <div className="flex flex-col w-[55vw] h-[65vh] mt-[10vh] rounded-md shadow-[5px_5px_10px_rgba(8,_112,_184,_0.7)]">
+          <div className="flex flex-col w-[55vw] h-[70vh] mt-[10vh] rounded-md shadow-[5px_5px_10px_rgba(8,_112,_184,_0.7)] ">
             {/** Title */}
             <div className="w-[100%] bg-indigo-600 text-3xl font-bold rounded-t-lg shadow-md">
               <div className="m-[2vh] text-white">Add Pet</div>
             </div>
 
+            <div className=" w-[100%] h-[70%] scrollbar-thin overflow-y-scroll overflow-x-hidden scrollbar-thumb-sky-500 scrollbar-track-white"> 
             {/** Name and Type*/}
             <div className="flex justify-start space-x-4 p-2 w-[100%] mt-2 mx-4">
               {/** Name */}
@@ -27,7 +28,7 @@ const AddPet = () => {
                   <input
                     type="text"
                     id="name"
-                    className="border border-gray-400 rounded w-[20vw] h-[5vh] py-4 px-2"
+                    className="border border-gray-400 rounded w-[20vw] h-[5vh] py-2 px-2"
                     placeholder="Name"
                   ></input>
                 </div>
@@ -102,7 +103,7 @@ const AddPet = () => {
                 ></textarea>
               </div>
             </div>
-
+            </div>
             {/** Add Button */}
             <div className="flex justify-end p-5">
               <button
