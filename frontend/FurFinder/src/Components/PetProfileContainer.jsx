@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import AdoptButton from "./Button";
 
 const PetProfileContainer = () => {
@@ -34,9 +35,9 @@ const PetProfileContainer = () => {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between h-[100%]">
+            <div className="flex flex-col justify-between h-[60%] overflow-hidden">
             {/** Description */}
-            <div className="text-justify text-xl w-[100%] h-[50%]  overflow-auto ">
+            <div className="text-justify text-xl w-[100%] h-[80%]  overflow-auto ">
               Cali is a charming and affectionate cat who is eagerly awaiting
               her forever home. With her soft fur and endearing purr, she's sure
               to steal your heart from the moment you meet her. Cali is a
@@ -48,18 +49,16 @@ const PetProfileContainer = () => {
               home. With her soft fur and endearing purr, she's sure to steal
               your heart from the moment you meet her. 
             </div>
-            <div className="flex justify-end items-bottom">
+            </div>
+            <div className="flex justify-end items-end mt-auto">
+            <Link to="/Application">
               <AdoptButton buttonText="Adopt"/>
-
-
+              </Link>
             </div>
-            </div>
-
           </div>
         </div>
       </div>
     </>
   );
 };
-
 export default PetProfileContainer;

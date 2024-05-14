@@ -8,6 +8,7 @@ import Home from './Pages/Home.jsx'               //* Home Page
 import FindAPet from './Pages/FindAPet.jsx'       //* Find a Pet Page
 import PetProfile from './Pages/PetProfile.jsx'   //* Pet Profile Page
 import Login from './Pages/Login.jsx'             //* Login Page
+import Application from './Pages/Application.jsx' //* Application Page
 
 import AddPet from './Pages/AddPet.jsx'             //* Add Pet Page
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: '/AddPet',
     element: <AddPet/>
+  },
+  {
+    path: '/Application',
+    element: <Application/>
   }
 
   ]);
