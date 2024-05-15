@@ -9,12 +9,18 @@ const ImgSlides = [
 	{ url: "src/Images/FurFinderImageSL2.jpg", title: "dog" },
 ];
 
+import React from "react";
+
 const Home = () => {
 	return (
 		<>
-			<NavBar />
-			{/* Sliding images component (as a prop) */}
-			<SlidingImages slides={ImgSlides} />
+			<div className="scrollbar-thin h-screen overflow-y-scroll overflow-x-hidden scrollbar-thumb-sky-500 scrollbar-track-white">
+				<NavBar />
+				<SlidingImages slides={ImgSlides} />
+			</div>
+
+			{/* Sliding images component (as a prop) 
+        <SlidingImages slides={ImgSlides}/> */}
 		</>
 	);
 };

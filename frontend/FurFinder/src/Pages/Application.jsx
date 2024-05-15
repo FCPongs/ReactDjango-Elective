@@ -1,17 +1,17 @@
 import React from "react";
 import NavBar from "../Components/NavBar";
-import FindAPetContainer from "../Components/FindAPetContainer";
+import ApplicationForm from "../Components/ApplicationForm";
 import AnimatedPage from "./AnimatedPage";
 
-const FindAPet = () => {
+const Application = () => {
   return (
     <>
       <NavBar />
       <AnimatedPage>
-        <FindAPetContainer />
+        <ApplicationForm />
       </AnimatedPage>
     </>
   );
 };
 
-export default FindAPet;
+export default Application;
