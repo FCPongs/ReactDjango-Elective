@@ -1,17 +1,28 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import PetProfileContainer from '../Components/PetProfileContainer'
+import { BrowserRouter as Router } from 'react-router-dom';
+import PetProfileContainer from '../Components/PetProfileContainer';
 
 describe('PetProfileContainer', () => {
-  test('renders component with correct name', () => {
-    render(<PetProfileContainer />);
-    const nameElement = screen.getByText('Cali');
-    expect(nameElement).toBeInTheDocument();
+  test('renders pet name correctly', () => {
+    render(
+      <Router>
+        <PetProfileContainer />
+      </Router>
+    );
+
+    const petName = screen.getByText('Cali');
+    expect(petName).toBeInTheDocument();
   });
 
-  test('renders adopt button', () => {
-    render(<PetProfileContainer />);
-    const adoptButton = screen.getByRole('button', { name: /adopt/i });
+  test('renders adopt button correctly', () => {
+    render(
+      <Router>
+        <PetProfileContainer />
+      </Router>
+    );
+
+    const adoptButton = screen.getByText('Adopt');
     expect(adoptButton).toBeInTheDocument();
   });
 });

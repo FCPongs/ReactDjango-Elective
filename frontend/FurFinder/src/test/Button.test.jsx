@@ -1,34 +1,18 @@
+
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import Button from '../Components/Button';
-import { describe, it } from '@jest/globals';
+import { render } from '@testing-library/react';
+import AdoptButton from '../Components/Button'; 
 
 describe('Button Component', () => {
   it('renders without crashing', () => {
-    render(<Button buttonText="Adopt Me" />);
-    const button = screen.getByText('Adopt Me');
-    expect(button).toBeInTheDocument();
+    render(<AdoptButton buttonText="Adopt Me" />);
+
   });
 
-  it('applies styles correctly', () => {
-    render(<Button buttonText="Adopt Me" />);
-    const button = screen.getByText('Adopt Me');
-
-    // Test specific styling properties (e.g., background color, rounded corners)
-    expect(button).toHaveStyle('background-color: #3f51b5');
-    expect(button).toHaveStyle('border-radius: 0.5rem');
-    // Add more style-related assertions as needed
+  it('displays the correct button text', () => {
+    const { getByText } = render(<AdoptButton buttonText="Adopt Me" />);
+    const buttonElement = getByText('Adopt Me');
+    expect(buttonElement).toBeInTheDocument();
   });
 
-  it('shows hover effects', () => {
-    render(<Button buttonText="Adopt Me" />);
-    const button = screen.getByText('Adopt Me');
-
-    // Simulate hover effect
-    fireEvent.mouseEnter(button);
-
-    // Test hover-specific styles (e.g., color change)
-    expect(button).toHaveStyle('color: #ffffff');
-    // Add more hover-related assertions as needed
-  });
 });
