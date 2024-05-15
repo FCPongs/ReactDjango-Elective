@@ -7,6 +7,7 @@ import AnimatedPage from "./AnimatedPage";
 const PetProfile = () => {
   return (
     <>
+    <div className="scrollbar-thin h-screen overflow-y-scroll overflow-x-hidden scrollbar-thumb-sky-500 scrollbar-track-white">
       <div
         className="bg-cover bg-center min-h-screen"
         style={{ backgroundImage: `url(${background})` }}
@@ -15,6 +16,7 @@ const PetProfile = () => {
         <AnimatedPage>
           <PetProfileContainer />
         </AnimatedPage>
+      </div>
       </div>
     </>
   );
