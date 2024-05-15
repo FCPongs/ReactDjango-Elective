@@ -12,6 +12,7 @@
 - The application also allows shelters and rescue organizations to list pets available for adoption and manage their profiles.
 
 # <h2>Database Diagram</h2>
+![image](https://github.com/FCPongs/ReactDjango-Elective/assets/137862066/662b0200-deb3-4601-bd6e-f9e4e09e3d50)
 
 # <h2>Libraries Used</h2>
 - React ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) + Vite ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) + JavaScript ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -19,7 +20,9 @@
 - Tailwind 	![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 - DjangoREST ![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)
 - Jest ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
+
 # <h2>Contributors</h2>
+
 
 # <h2>Pictures of the Application</h2>
 
