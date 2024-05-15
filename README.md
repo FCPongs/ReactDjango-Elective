@@ -22,7 +22,7 @@
 - Jest ![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
 
 # <h2>Contributors</h2>
-
+![Contributors](https://github.com/FCPongs/ReactDjango-Elective/assets/137862066/f719862b-23df-4185-8537-42c194c7e450)
 
 # <h2>Pictures of the Application</h2>
 
