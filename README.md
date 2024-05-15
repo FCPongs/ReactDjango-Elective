@@ -11,6 +11,14 @@
 - Users can view detailed profiles of available pets, including photos, descriptions, and adoption status.
 - The application also allows shelters and rescue organizations to list pets available for adoption and manage their profiles.
 
+# <h2>Database Diagram</h2>
+
+# <h2>Libraries Used</h2>
+
+# <h2>Contributors</h2>
+
+# <h2>Pictures of the Application</h2>
+
 # <h2>How does the full stack web application help the benefactors of it :open_hands:</h2>
 - Provides a centralized platform for shelters and rescue organizations to showcase rescued animals and increase their chances of adoption.
 - Enables users to easily search for and find pets available for adoption based on their preferences and location.
