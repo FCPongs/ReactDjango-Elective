@@ -1,4 +1,5 @@
 from django.db import models
+from users.models import User
 
 class Shelter(models.Model):
     name = models.CharField(max_length=200)
@@ -57,6 +58,7 @@ class Pet(models.Model):
     # relationships 
     shelter = models.ForeignKey(Shelter, on_delete=models.CASCADE)
     breed = models.ForeignKey(Breed, on_delete=models.DO_NOTHING)
+    adopted_by = models.ForeignKey(User, on_delete=models.DO_NOTHING, verbose_name="Adopted By", null=True)
     
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
