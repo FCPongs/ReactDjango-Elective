@@ -9,7 +9,8 @@ import FindAPet from "./Pages/FindAPet.jsx"; //* Find a Pet Page
 import PetProfile from "./Pages/PetProfile.jsx"; //* Pet Profile Page
 import Login from "./Pages/Login.jsx"; //* Login Page
 import Application from "./Pages/Application.jsx"; //* Application Page
-
+import ContactUs from "./Pages/ContactUs.jsx"; //*Contact Us Page
+import AboutUs from "./Pages/AboutUs.jsx";//* About Us Page
 
 import AddPet from "./Pages/AddPet.jsx"; //* Add Pet Page
 import EditPet from "./Pages/EditPet.jsx"; //* Edit Pet Page
@@ -22,6 +23,14 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
     errorElement: <div>404 Not Found</div>,
+  },
+  {
+    path: "/AboutUs",
+    element: <AboutUs />,
+  },
+  {
+    path: "/ContactUs",
+    element: <ContactUs />,
   },
   {
     path: "/FindAPet",
