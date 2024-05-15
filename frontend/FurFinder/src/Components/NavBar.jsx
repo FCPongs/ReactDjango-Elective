@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import AuthContext from "../Context/AuthContext";
+
 import LogoImage from "../Images/Logo.png";
 import { Link } from "react-router-dom";
 
@@ -5,7 +8,8 @@ import { useState } from "react";
 
 const NavBar = () => {
 	const [isOpen, setOpen] = useState(false);
-
+	const { authTokens } = useContext(AuthContext);
+	console.log(authTokens);
 	return (
 		<>
 			{/** Div wrapper    */}
@@ -35,48 +39,49 @@ const NavBar = () => {
 					</li>
 
 					{/** Manage Pets */}
-					<div className="p-4 relative hover:underline cursor-pointer">
-						{/** Button dropdown*/}
-						<div className="" onClick={() => setOpen((prev) => !prev)}>
-							Manage pets
+					{authTokens && (
+						<div className="p-4 relative hover:underline cursor-pointer">
+							{/** Button dropdown*/}
+							<div className="" onClick={() => setOpen((prev) => !prev)}>
+								Manage pets
+							</div>
+
+							{isOpen && (
+								<>
+									<div className="absolute w-40 mt-2 bg-slate-100 shadow-md">
+										<Link to="/AddPet">
+											<li className="cursor-pointer hover:bg-indigo-500 hover:text-white p-1">
+												Add Pet
+											</li>
+										</Link>
+
+										<Link to="/EditPets">
+											<li className="cursor-pointer hover:bg-orange-500 hover:text-white p-1">
+												Edit Pet
+											</li>
+										</Link>
+
+										<Link to="/DeletePet">
+											<li className="cursor-pointer hover:bg-red-500 hover:text-white p-1">
+												Delete Pet
+											</li>
+										</Link>
+									</div>
+								</>
+							)}
 						</div>
-
-						{isOpen && (
-							<>
-								<div className="absolute w-40 mt-2 bg-slate-100 shadow-md">
-									<Link to="/AddPet">
-										<li className="cursor-pointer hover:bg-indigo-500 hover:text-white p-1">
-											Add Pet
-										</li>
-									</Link>
-
-									<Link to="/EditPet">
-										<li className="cursor-pointer hover:bg-orange-500 hover:text-white p-1">
-											Edit Pet
-										</li>
-									</Link>
-
-									<Link to="/DeletePet">
-										<li className="cursor-pointer hover:bg-red-500 hover:text-white p-1">
-											Delete Pet
-										</li>
-									</Link>
-								</div>
-							</>
-						)}
-					</div>
+					)}
 				</ul>
 
 				<div className="flex items-center">
-					<form action="" className="ml-10 mr-10">
-						<input
-							type="text"
-							name="search"
-							placeholder="Search"
-							className="rounded-md h-9 w-34 border-b-2 border-indigo-500 outline-none"
-						/>
-					</form>
-					<h1 className="mr-5">O</h1>
+					<div className="mr-10 ml-10">
+						<Link to="/logout">
+							<p className="p-4 hover:underline">Logout</p>
+						</Link>
+					</div>
+					<h1 className="mr-5">
+						{authTokens ? "Hello, Admin!" : "Hello, Customer!"}
+					</h1>
 				</div>
 			</div>
 		</>
