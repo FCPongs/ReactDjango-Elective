@@ -5,6 +5,7 @@ import AnimatedPage from "./AnimatedPage";
 const EditPet = () => {
   return (
     <>
+    <div className="scrollbar-thin h-screen overflow-y-scroll overflow-x-hidden scrollbar-thumb-sky-500 scrollbar-track-white">
       <NavBar />
       <AnimatedPage>
         <div className="flex justify-center h-screen">
@@ -104,7 +105,9 @@ const EditPet = () => {
             </div>
           </div>
         </div>
+        
       </AnimatedPage>
+      </div>
     </>
   );
 };

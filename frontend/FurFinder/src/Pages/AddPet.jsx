@@ -5,6 +5,7 @@ import AnimatedPage from "./AnimatedPage";
 const AddPet = () => {
   return (
     <>
+    <div className="scrollbar-thin h-screen overflow-y-scroll overflow-x-hidden scrollbar-thumb-sky-500 scrollbar-track-white">
       <NavBar />
       <AnimatedPage>
         {/** Name, animal type, breed, age, image, description */}
@@ -116,6 +117,7 @@ const AddPet = () => {
           </div>
         </div>
       </AnimatedPage>
+      </div>
     </>
   );
 };

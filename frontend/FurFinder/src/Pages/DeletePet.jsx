@@ -5,9 +5,10 @@ import AnimatedPage from "./AnimatedPage";
 const DeletePet = () => {
   return (
     <>
+    <div className="scrollbar-thin h-screen overflow-y-scroll overflow-x-hidden scrollbar-thumb-sky-500 scrollbar-track-white">
       <NavBar />
       <AnimatedPage>
-        <div className="flex justify-center h-screen">
+        <div className="flex justify-center h-screen ">
           <div className="flex flex-col w-[55vw] h-[60vh] mt-[10vh] rounded-md shadow-[5px_5px_10px_rgba(8,_112,_184,_0.7)] ">
             <div className="flex w-[100%] items-center bg-red-500 text-3xl font-bold rounded-t-lg shadow-md">
               <div className="m-[2vh] text-white">Delete Pet</div>
@@ -53,6 +54,7 @@ const DeletePet = () => {
           </div>
         </div>
       </AnimatedPage>
+      </div>
     </>
   );
 };
