@@ -27,11 +27,11 @@ const NavBar = () => {
 					</li>
 					{/** About Us */}
 					<li className="p-4 hover:underline" href="#">
-						<a href="">About us</a>
+						<Link to="/AboutUs">About us</Link>
 					</li>
 					{/** Contact Us */}
 					<li className="p-4 hover:underline">
-						<a href="#">Contact us</a>
+						<Link to="/ContactUs">Contact us</Link>
 					</li>
 					{/** Find a Pet */}
 					<li className="p-4 hover:underline">
