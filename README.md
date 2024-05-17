@@ -25,6 +25,7 @@
 ![Contributors](https://github.com/FCPongs/ReactDjango-Elective/assets/137862066/f719862b-23df-4185-8537-42c194c7e450)
 
 # <h2>Pictures of the Application</h2>
+![image](https://github.com/FCPongs/ReactDjango-Elective/assets/137862066/c2566de9-d2ba-4670-b378-30173837f703)
 
 # <h2>How does the full stack web application help the benefactors of it :open_hands:</h2>
 - Provides a centralized platform for shelters and rescue organizations to showcase rescued animals and increase their chances of adoption.
